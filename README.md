@@ -2,6 +2,8 @@
 
 Solução completa para o processo seletivo de Estágio em Desenvolvimento de Software da Katalyst 2026.
 
+Projeto desenvolvido com NestJS (TypeScript), compilado para JavaScript conforme exigido no teste.
+
 ## 📋 Características
 
 ✅ **Backend NestJS** - API robusta e escalável
