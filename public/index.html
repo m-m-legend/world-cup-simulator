@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏆 Simulador de Copa do Mundo 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1>🏆 Copa do Mundo 2026</h1>
+        <p class="subtitle">Simulador Interativo de Torneio</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="controls">
+        <button id="startBtn" class="btn btn-primary" onclick="startSimulation()">
+          ▶️ Iniciar Simulação
+        </button>
+        <button id="resetBtn" class="btn btn-secondary" onclick="resetSimulation()" style="display: none;">
+          🔄 Reiniciar
+        </button>
+      </section>
+
+      <div id="loadingSpinner" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Carregando seleções...</p>
+      </div>
+
+      <section id="groupsSection" class="section" style="display: none;">
+        <h2 class="section-title">⚽ Fase de Grupos</h2>
+        <div id="groupsContainer" class="groups-grid"></div>
+      </section>
+
+      <section id="matchesSection" class="section" style="display: none;">
+        <h2 class="section-title">🎯 Partidas da Fase de Grupos</h2>
+        <div id="matchesContainer" class="matches-container"></div>
+      </section>
+
+      <section id="knockoutSection" class="section" style="display: none;">
+        <h2 class="section-title">🏅 Fase Eliminatória</h2>
+        <div id="knockoutContainer" class="knockout-container"></div>
+      </section>
+
+      <section id="resultSection" class="section" style="display: none;">
+        <h2 class="section-title">🎊 Campeão da Copa</h2>
+        <div id="resultContainer" class="result-container"></div>
+      </section>
+
+      <div id="errorSection" class="error-message" style="display: none;"></div>
+    </main>
+
+    <footer class="footer">
+      <p>Processo Seletivo Katalyst - Estágio Desenvolvimento 2026</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
